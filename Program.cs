@@ -1,9 +1,21 @@
 ﻿using System;
 
+Main();
+
+void Main()
+{
 Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
 Console.WriteLine("--------------------------------------------");
 Console.WriteLine();
 
+MooseSays("H I, I'M  E N T H U S I A S T I C !");
+MooseSays("I really am enthusiastic");
+
+CanadaQuestion();
+EnthusiasticQuestion();
+LoveCSharpQuestion();
+SecretQuestion();
+}
 void MooseSays(string message)
 {
     Console.WriteLine($@"
@@ -36,9 +48,6 @@ void MooseSays(string message)
     ");
 }
 
-MooseSays("H I, I'M  E N T H U S I A S T I C !");
-MooseSays("I really am enthusiastic");
-
 bool MooseAsks(string question)
 {
     Console.Write($"{question} (Y/N): ");
@@ -59,11 +68,6 @@ bool MooseAsks(string question)
         return false;
     }
 }
-
-CanadaQuestion();
-EnthusiasticQuestion();
-LoveCSharpQuestion();
-SecretQuestion();
 
 
 void CanadaQuestion()
